@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet"></link>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+  <body>
+
+  <div class='container'>
+  <div class='panel'>
+    <div class='panel-heading'>
+      <h1>You've got feels, we've got websockets.</h1>
+    </div>
+  </div>
+    <div class="col-sm-4">
+      <form id='col-1'>
+        <input class='form-control' placeholder='add column title here'>
+      </form>
+      <div class='col-title' id='col-1-title'></div>
+      <div id='well-1' class='well'></div>
+    </div>
+    <div class="col-sm-4">
+      <form id='col-2'>
+        <input class='form-control' placeholder='add column title here'>
+      </form>
+      <div class='col-title' id='col-2-title'></div>
+      <div id='well-2' class='well'>
+      
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <form id='col-3'>
+        <input id='col-3' class='form-control' placeholder='add column title here'>
+      </form>
+      <div class='col-title' id='col-3-title'></div>
+      <div id='well-3' class='well'>
+      
+      </div>
+    </div>
+  </div>
+  <!-- modal 1 -->
+<div id='myModal1' class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content" style='background-color: #F1C40F; border-radius: 0'>
+      <div class="modal-header" style='border-bottom: #F39C12'>
+        <button id='close-modal-1' type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Share some feels</h4>
+      </div>
+      <div class="modal-body" style="height: 380px">
+        <p>choose a color</p>
+        <div class="btn-group-1" data-toggle="buttons">
+          <button class="btn btn-yellow active"><input type="radio" name="options" id="#e8fd14" autocomplete="off" checked></button>
+          <button class="btn btn-blue"><input type="radio" name="options" id="#00adef" autocomplete="off"></button>
+          <button class="btn btn-green"><input type="radio" name="options" id="#81fe00" autocomplete="off"></button>
+          <button class="btn btn-pink"><input type="radio" name="options" id="#ff2a86" autocomplete="off"></button>
+          <button class="btn btn-purple"><input type="radio" name="options" id="#cc71ce" autocomplete="off"></button>
+          <button class="btn btn-orange"><input type="radio" name="options" id="#fdb000" autocomplete="off"></button>
+        </div>
+
+        <form id='postit-modal-name'>
+          <input class='form-control input-lg' style='background-color: #F1C40F; border-color: #F1C40F' placeholder="What's your name?">
+        </form>
+        <form id='postit-modal-message-1'>
+          <input class='form-control input-lg' style='background-color: #F1C40F; border-color: #F1C40F' placeholder="write here.">
+        </form>
+      </div>
+      <div class="modal-footer" style='border-top: #F39C12'>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 2 -->
+<div id='myModal2' class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content" style='background-color: #F1C40F; border-radius: 0'>
+      <div class="modal-header" style='border-bottom: #F39C12'>
+        <button id='close-modal-2' type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Share some feels</h4>
+      </div>
+      <div class="modal-body" style="height: 380px">
+        <p>choose a color</p>
+        <div class="btn-group-2" data-toggle="buttons">
+          <button class="btn btn-yellow active"><input type="radio" name="options" id="#e8fd14" autocomplete="off" checked></button>
+          <button class="btn btn-blue"><input type="radio" name="options" id="#00adef" autocomplete="off"></button>
+          <button class="btn btn-green"><input type="radio" name="options" id="#81fe00" autocomplete="off"></button>
+          <button class="btn btn-pink"><input type="radio" name="options" id="#ff2a86" autocomplete="off"></button>
+          <button class="btn btn-purple"><input type="radio" name="options" id="#cc71ce" autocomplete="off"></button>
+          <button class="btn btn-orange"><input type="radio" name="options" id="#fdb000" autocomplete="off"></button>
+        </div>
+
+        <form id='postit-modal-name-2'>
+          <input class='form-control input-lg' style='background-color: #F1C40F; border-color: #F1C40F' placeholder="What's your name?">
+        </form>
+        <form id='postit-modal-message-2'>
+          <input class='form-control input-lg' style='background-color: #F1C40F; border-color: #F1C40F' placeholder="write here.">
+        </form>
+      </div>
+      <div class="modal-footer" style='border-top: #F39C12'>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal 3 -->
+<div id='myModal3' class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content" style='background-color: #F1C40F; border-radius: 0'>
+      <div class="modal-header" style='border-bottom: #F39C12'>
+        <button id='close-modal-3' type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Share some feels</h4>
+      </div>
+      <div class="modal-body" style="height: 380px">
+        <p>choose a color</p>
+        <div class="btn-group-3" data-toggle="buttons">
+          <button class="btn btn-yellow active"><input type="radio" name="options" id="#e8fd14" autocomplete="off" checked></button>
+          <button class="btn btn-blue"><input type="radio" name="options" id="#00adef" autocomplete="off"></button>
+          <button class="btn btn-green"><input type="radio" name="options" id="#81fe00" autocomplete="off"></button>
+          <button class="btn btn-pink"><input type="radio" name="options" id="#ff2a86" autocomplete="off"></button>
+          <button class="btn btn-purple"><input type="radio" name="options" id="#cc71ce" autocomplete="off"></button>
+          <button class="btn btn-orange"><input type="radio" name="options" id="#fdb000" autocomplete="off"></button>
+        </div>
+
+        <form id='postit-modal-name-3'>
+          <input class='form-control input-lg' style='background-color: #F1C40F; border-color: #F1C40F' placeholder="What's your name?">
+        </form>
+        <form id='postit-modal-message-3'>
+          <input class='form-control input-lg' style='background-color: #F1C40F; border-color: #F1C40F' placeholder="write here.">
+        </form>
+      </div>
+      <div class="modal-footer" style='border-top: #F39C12'>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/jquery-ui/jquery-ui.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>
+
+<script>
+// socket submit Titles
+  $('#col-1').submit(function(event){
+    var title = $('#col-1 input').val(); 
+    socket.emit('title-1', title);
+    event.preventDefault();
+  });
+
+  $('#col-2').submit(function(event){
+    var title = $('#col-2 input').val(); 
+    socket.emit('title-2', title);
+    event.preventDefault();
+  });
+
+  $('#col-3').submit(function(event){
+    var title = $('#col-3 input').val(); 
+    socket.emit('title-3', title);
+    event.preventDefault();
+  });
+
+//socket submit post-its
+  $('#postit-modal-message-1').submit(function(event){
+    var name = $('#postit-modal-name input').val();
+    var message = $('#postit-modal-message-1 input').val();
+    var color = $('.btn-group-1 button input:radio:checked').attr('id')
+    var data = { name: name, message: message, color: color };
+    event.preventDefault();
+    $('#close-modal-1').click();
+    socket.emit('post-it-1', data);
+    $('#postit-modal-message-1 input').val('');
+  });
+
+  $('#postit-modal-message-2').submit(function(event){
+    var name = $('#postit-modal-name-2 input').val();
+    var message = $('#postit-modal-message-2 input').val();
+    var color = $('.btn-group-2 button input:radio:checked').attr('id')
+    var data = { name: name, message: message, color: color };
+    event.preventDefault();
+    $('#close-modal-2').click();
+    socket.emit('post-it-2', data);
+    $('#postit-modal-message-2 input').val('');
+  });
+
+  $('#postit-modal-message-3').submit(function(event){
+    var name = $('#postit-modal-name-3 input').val();
+    var message = $('#postit-modal-message-3 input').val();
+    var color = $('.btn-group-3 button input:radio:checked').attr('id')
+    var data = { name: name, message: message, color: color };
+    event.preventDefault();
+    $('#close-modal-3').click();
+    socket.emit('post-it-3', data);
+    $('#postit-modal-message-3 input').val('');
+  });
+
+  var socket = io.connect();
+  socket.on('connect', function(data) {
+    socket.emit('join', 'hello world from the client!');
+  });
+
+  socket.on('new-post-it-1', function(data) {
+    var postIt = $('#well-1').append("<div style='background-color: " + data['color'] + "'class='thumbnail post-it'><div class='caption'><p>" + data['name'] + ": " + data['message'] + "</p></div></div>");
+  });
+
+  socket.on('new-post-it-2', function(data) {
+    var postIt = $('#well-2').append("<div style='background-color: " + data['color'] + "'class='thumbnail post-it'><div class='caption'><p>" + data['name'] + ": " + data['message'] + "</p></div></div>");
+  });
+
+  socket.on('new-post-it-3', function(data) {
+    $('#well-3').append("<div style='background-color: " + data['color'] + "' class='thumbnail post-it'><div class='caption'><p>" + data['name'] + ": " + data['message'] + "</p></div></div>");
+  });
+
+  // socket-title logic
+  socket.on('new-title-1', function(data){
+    $('#col-1-title').append(
+    "<div class='panel' style='margin-bottom: 38px; border-top: 0px'>" +
+      "<div='panel-heading'>" +
+        "<h4 style='position: absolute'>" + data + '</h4>' + "<a class='col-1-btn btn btn-default pull-right' data-toggle='modal' data-target='#myModal1'>+</a>" +
+      "</div>" +
+    "</div>");
+    $('#col-1').hide();
+  });
+
+  socket.on('new-title-2', function(data){
+    $('#col-2-title').append(
+    "<div class='panel' style='margin-bottom: 38px; border-top: 0px'>" +
+      "<div='panel-heading'>" +
+        "<h4 style='position: absolute'>" + data + '</h4>' + "<a class='col-2-btn btn btn-default pull-right' data-toggle='modal' data-target='#myModal2'>+</a>" +
+      "</div>" +
+    "</div>");
+    $('#col-2').hide();
+  });
+
+  socket.on('new-title-3', function(data){
+    $('#col-3-title').append(
+    "<div class='panel' style='margin-bottom: 38px; border-top: 0px'>" +
+      "<div='panel-heading'>" +
+        "<h4 style='position: absolute'>" + data + '</h4>' + "<a class='col-3-btn btn btn-default pull-right' data-toggle='modal' data-target='#myModal3'>+</a>" +
+      "</div>" +
+    "</div>");
+    $('#col-3').hide();
+  });
+
+</script>
