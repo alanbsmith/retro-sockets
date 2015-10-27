@@ -1,6 +1,9 @@
 # retro-sockets
 a simple tool for dispersed team retrospectives
 
+### IF YOU'RE LOOKING FOR THE REACT REWRITE OF THIS APP
+[This is where you need to go.](https://github.com/alanbsmith/react-retro-sockets)
+
 ### up and running
 run `npm install` and `bower install`
 open http://localhost:8080/ in your browser
